@@ -14,11 +14,12 @@ class App extends Component {
     render() {
         return (
             <div className='container'>
+                <h1 className='title'>TIC TAC TOE</h1>
                 <Loader>
                     <Grid/>
                 </Loader>
 
-                <h1 className='title'>TIC TAC TOE</h1>
+
                 <h2 className="server-messages">{this.props.message}</h2>
 
                 <ActionsLog/>

@@ -1,4 +1,4 @@
-var DashboardPlugin = require('webpack-dashboard/plugin');
+let DashboardPlugin = require('webpack-dashboard/plugin');
 
 const config = {
     plugins: [

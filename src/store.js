@@ -5,22 +5,14 @@ import * as reducers from './reducers';
 const composeEnhancers =
     typeof window === 'object' &&
     window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ ?
-        window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__({
-            // Specify extension’s options like name, actionsBlacklist, actionsCreators, serialize...
-        }) : compose;
+        window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__({}) : compose;
 
 const enhancer = composeEnhancers(
     applyMiddleware(reduxThunk),
-    // other store enhancers if any
 );
 
-const reducer = combineReducers({ ...reducers });
+const reducer = combineReducers({...reducers});
 
 const store = createStore(reducer, enhancer);
 
 export default store;
-
-
-// const createStoreWithMiddleware = applyMiddleware(reduxThunk)(createStore);
-//
-// export default createStoreWithMiddleware(reducer);
