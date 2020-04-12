@@ -1,4 +1,4 @@
-# Tic-Tac-Toe client written with React + Redux
+# Tic Tac Toe client by React / Redux
 
 Backend server at https://github.com/shuvro/mern-tic-tac-toe-server.git
  
