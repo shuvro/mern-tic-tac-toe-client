@@ -19,3 +19,14 @@ yarn serve:dev
 ````bash
 http://localhost:3000/
 ````
+### Docker
+Run the Game Frontend (React/Redux) using docker
+
+```bash
+docker-compose up --build
+```
+
+Checkout the application at 
+```bash
+http://localhost:3000
+```
